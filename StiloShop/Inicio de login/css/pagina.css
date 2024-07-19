@@ -1,0 +1,346 @@
+:root{
+    --purple: #382a86;}
+   
+   
+   *{
+       margin: 0; padding: 0;
+       box-sizing: border-box;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       outline: none; border: none;
+       text-decoration: none;
+       text-transform: capitalize;
+       transition: .2s linear;
+   }
+   
+   
+   html{
+       font-size: 62.5%;
+       scroll-behavior: smooth;
+       scroll-padding-top: 6rem;
+       overflow-x: hidden;
+   }
+   
+   .heading{
+       text-align: center;
+       font-size: 4rem;
+       color: #333;
+       padding: 4rem;
+       margin: 2rem 0;
+       background: rgba(169, 79, 192, 0.05);
+       margin-top: 70px;
+       
+   }
+   
+   .heading span{
+       color: var(--purple);
+   }  
+   section{
+       padding: 2rem 9%;
+   }
+   
+   .bth{
+       display: inline-block;
+       margin-top: 1rem;
+       border-radius: 5rem;
+       background: #333;
+       color: #fff;
+       padding: .9rem 3.5rem;
+       cursor: pointer;
+       font-size: 1.7rem;
+   }
+   
+   .bth:hover{
+       background: var(--purple);
+   }
+   
+   header{
+       position: fixed;
+       top: 0; left: 0; right: 0;
+       background: #fff;
+       padding: 2rem 9%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       z-index: 1000;
+       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   }
+   
+   header .logo{
+       font-size: 3rem;
+       color: #333;
+       font-weight: bolder;
+   }
+   
+   header .logo span{
+       color: var(--purple);
+   }
+   
+   header .navbar a{
+       font-size: 2rem;
+       padding: 0 1.5rem;
+       color: #666;
+   }
+   
+   header .navbar a:hover{
+       color: var(--purple);
+   }
+   
+   header .icons a{
+       font-size: 3rem;
+       color: #333;
+       margin-left: 1.5rem;
+   }
+   
+   header .icons a:hover{
+       color:var(--purple);
+   }
+   
+   header #toggler{
+       display: none;
+   }
+   
+   header .fa-bars{
+       font-size: 3rem;
+       color: #333;
+       border-radius: .5rem;
+       padding: .5rem 1.5rem;
+       cursor: pointer;
+       border: 1rem solid rgba(0, 0, 0, .3);
+       display: none;
+   }
+   
+   
+   .bth{
+       display: inline-block;
+       margin-top: 1rem;
+       border-radius: 5rem;
+       background: #333;
+       color: #fff;
+       padding: .9rem 3.5rem;
+       cursor: pointer;
+       font-size: 1.7rem;
+   }
+   
+   .bth:hover{
+       background: var(--purple);
+   }
+   
+   header{
+       position: fixed;
+       top: 0; left: 0; right: 0;
+       background: #fff;
+       padding: 2rem 9%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       z-index: 1000;
+       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   }
+   
+   header .logo{
+    font-size: 3rem;
+    color: #382a86;
+    font-weight: bolder;
+}
+   
+   header .logo span{
+       color: var(--purple);
+   }
+   
+   header .navbar a{
+       font-size: 2rem;
+       padding: 0 1.5rem;
+       color: #666;
+   }
+   
+   header .navbar a:hover{
+       color: var(--purple);
+   }
+   
+   header .icons a{
+       font-size: 3rem;
+       color: #333;
+       margin-left: 1.5rem;
+   }
+   
+   header .icons a:hover{
+       color:var(--purple);
+   }
+   
+   header #toggler{
+       display: none;
+   }
+   
+   header .fa-bars{
+       font-size: 3rem;
+       color: #333;
+       border-radius: .5rem;
+       padding: .5rem 1.5rem;
+       cursor: pointer;
+       border: 1rem solid rgba(0, 0, 0, .3);
+       display: none;
+   }
+   @media (max-width:991px){
+       html{
+           font-size: 55%;
+       }
+       header{
+           padding: 2rem;
+       }
+       section{
+           padding: 2rem;
+       }
+       .home{
+           background-position: left;
+       }
+   }
+   
+   @media (max-width:768px){
+       header .fa-bars{
+           display: block;
+       }
+   
+       header .navbar{
+           position: absolute;
+           top: 100%; left: 0; right: 0;
+           background: #eee;
+           border-top: .1rem solid rgba(0, 0, 0, .1);
+           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+       }
+   
+       header #toggler:checked ~ .navbar{
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+       }
+   
+       header .navbar a{
+           margin: 1.5rem;
+           padding: 1.5rem;
+           background: #fff;
+           border: .1rem solid rgba(0, 0, 0, .1);
+           display: block;
+       }
+   
+       .home .content h3{
+           font-size: 5rem;
+       }
+   
+       .home .content span{
+           font-size: 2.5rem;
+       }
+   
+       .icons-container .icons h3{
+           font-size: 2rem;
+       }
+       
+       .icons-container .icons span{
+           font-size: 1.7rem;
+       }
+   }
+  
+/* Estilos para el formulario */
+form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px; 
+    margin-top: 100px;
+    padding: 40px 0;
+    width: 300px;
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+/* Estilo para las etiquetas de los campos */
+label {
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada de texto y correo */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    background-color: #9d4caf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+input[type="submit"]:hover {
+    background-color: #9d45a0;
+}
+
+     
+/*footer*/
+footer {
+    background: rgba(169, 79, 192, 0.05);
+    margin-top: 30px;
+    padding: 10px 0;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px; 
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: black;
+    font-size: 25px;
+}
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: black;
+}

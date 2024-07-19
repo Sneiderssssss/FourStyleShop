@@ -1,0 +1,195 @@
+body{
+background-color: #F5F5F5;
+padding: 0;
+margin: 0;
+font-size: clamp(1rem, 5vw, 2rem);
+}
+.header-blanco {
+  background-color: white; /* Fondo blanco para el encabezado */
+  padding: 30px 30px; /* Espaciado interno */
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+/* Contenido del encabezado */
+.header-content {
+  display: flex; /* Flexbox para disposición */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Alinear verticalmente */
+}
+
+/* Navegación en el encabezado */
+.navbar {
+  display: flex; /* Flexbox para disposición horizontal */
+  gap: 15px; /* Espaciado entre elementos */
+  font-size: 20px; /* Tamaño del texto */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilo del logo */
+.logo {
+  font-size: 20px; /* Tamaño del logo */
+  font-weight: bold; /* Negrita para el logo */
+}
+
+/* Iconos a la derecha del encabezado */
+.icons {
+  display: flex; /* Flexbox para alinear iconos */
+  gap: 10px; /* Espaciado entre iconos */
+}
+
+/* Espaciado en el contenedor principal */
+.container {
+  padding: 20px; /* Espaciado interno */
+  background-color: white;
+  width: 80%;
+  margin: 30px  auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+display: flex;
+justify-content: space-around;
+}
+
+/* Estilo general para el contenido */
+.content {
+  display: flex; /* Flexbox para disposición */
+  flex-direction: column; /* Disposición vertical */
+  gap: 10px; /* Espacio entre elementos */
+  font-size: 20px; /* Tamaño de fuente */
+  font-family: 'Roboto', sans-serif; /* Fuente para texto */
+}
+
+/* Sección para el título */
+.product-title {
+  font-size: 30px; /* Tamaño del título */
+  font-weight: bold; /* Negrita para resaltar */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Disposición de imagen e información del producto */
+.image-and-info {
+  display: flex; /* Flexbox para disposición horizontal */
+  gap: 20px; /* Espacio entre imagen e información */
+  align-items: flex-start; /* Alinear desde arriba */
+}
+
+/* Sección para la imagen del producto */
+.product-image {
+  flex: 1; /* Ocupa un tercio del espacio */
+  position: relative; /* Para colocar elementos sobre la imagen */
+}
+
+/* Imagen con tamaño máximo */
+.product-image img {
+  max-width: 400px; /* Ancho máximo para la imagen */
+  height: auto; /* Mantener proporción */
+}
+
+/* Íconos dinámicos sobre la imagen */
+.image-icons {
+  position: absolute; /* Para colocar sobre la imagen */
+  top: 10px; /* Desde la parte superior */
+  right: 10px; /* Desde la parte derecha */
+  display: flex; /* Flexbox para alinear íconos */
+  gap: 10px; /* Espaciado entre íconos */
+}
+
+/* Sección para la información del producto */
+.product-info {
+  flex: 2; /* Ocupa dos tercios del espacio */
+  display: flex; /* Flexbox para disposición */
+  flex-direction: column; /* Disposición vertical */
+  gap: 10px; /* Espaciado entre elementos */
+}
+
+/* Estilo para el precio del producto */
+.product-price {
+  font-weight: 600; /* Negrita */
+  background-color: #FAFAFA;
+  text-align: center;
+  color: #EE4D2D;
+}
+
+/* Calificaciones representadas con estrellas */
+.product-ratings {
+  display: flex; /* Flexbox para disposición */
+  align-items: center; /* Alinear verticalmente */
+  gap: 5px; /* Espaciado entre estrellas */
+}
+
+/* Representación visual de calificaciones */
+.product-stars {
+  color: gold; /* Color dorado para las estrellas */
+}
+
+/* Información sobre el envío */
+.product-shipping {
+  color: #666; /* Color del texto */
+}
+
+/* Información adicional sobre el envío */
+.shipping-details {
+  font-size: 0.9em; /* Tamaño más pequeño para detalles */
+  color: #666; /* Color del texto */
+}
+
+/* Botones para seleccionar la talla */
+.product-sizes {
+  display: flex; /* Flexbox para disposición horizontal */
+  gap: 10px; /* Espaciado entre botones */
+}
+
+.size-button {
+  background-color: #eaeaea; 
+  color: #333; 
+  padding: 10px; 
+  border-radius: 5px; 
+  border: none; 
+  cursor: pointer; 
+}
+
+
+.size-button:hover {
+  background-color: #ccc; 
+}
+
+/* Estilo para la cantidad */
+.product-quantity {
+  display: flex; /* Flexbox para disposición horizontal */
+  align-items: center; /* Alinear verticalmente */
+  gap: 10px; /* Espaciado entre elementos */
+}
+
+/* Campo de entrada para cantidad */
+.quantity-input {
+  width: 50px; /* Ancho para la entrada */
+  text-align: center; /* Centrar el texto */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px sólido; /* Borde visible */
+}
+
+/* Estilo para el pie de página */
+.footer-morado {
+  background-color: #b862f6; /* Color de fondo morado */
+  color: rgb(52, 50, 50); /* Color del texto */
+  text-align: center; /* Alinear al centro */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .image-and-info {
+      flex-direction: column; /* Disposición vertical */
+      align-items: flex-start; /* Alinear desde arriba */
+  }
+  
+  .product-image {
+      text-align: center; /* Centrar la imagen */
+  }
+  
+  .Calificaciones-y-vendido {
+      flex-direction: column; /* Disposición vertical */
+      gap: 10px; /* Espaciado adicional */
+  }
+}

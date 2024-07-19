@@ -1,0 +1,88 @@
+/* Estilos para el footer */
+footer {
+  background: rgba(169, 79, 192, 0.05);
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  padding: 30px 0; /* Aumentar el espacio interno */
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px; /* Aumentar el tamaño del texto */
+}
+
+.containerq {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px; 
+  text-align: center;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icons {
+  text-align: center;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-icons i {
+  color: black;
+  font-size: 25px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: black;
+}
+
+/* Estilos para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+  .footer-column {
+      flex: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+      margin: 20px 0; /* Agregado para dar espacio entre las columnas */
+  }
+
+  .footer-column p {
+      margin-bottom: 15px; /* Espacio entre párrafos */
+  }
+}
+
+/* Estilos para enlaces de redes sociales */
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #a94fc0; /* Cambiar color al pasar el ratón */
+}
+
+/* Estilos para el ícono de ubicación */
+.location-icon {
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
