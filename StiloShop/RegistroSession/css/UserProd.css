@@ -1,0 +1,342 @@
+:root {
+    --purple: #382a86;
+    --primary-color: #1f1f1f;
+    --secondary-color: #fff;
+    --success-color: #00cc00;
+    --error-color: #ff0000;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+body {
+    background-image: url(https://i0.wp.com/buscandountrabajo.net/wp-content/uploads/Vendedor-de-ropa.jpg);
+    background-size: cover; /* Para ajustar la imagen de fondo al tamaño de la ventana */
+    background-position: center; /* Para centrar la imagen de fondo */
+    font-size: 1.6rem; /* Ajustado para una mejor legibilidad */
+    line-height: 1.6;
+    color: #333;
+    margin: 0; /* Eliminado el margen predeterminado del body */
+    padding: 0; /* Eliminado el padding predeterminado del body */
+}   
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #000000;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(169, 79, 192, 0.05);
+}
+
+.heading span{
+    color: var(--purple);
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.bth{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #1f1f1f;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.bth:hover{
+    background: var(--purple);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+
+
+
+.logo1 {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo1 img {
+    height: 50px;
+    margin-left: 30px;
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #1f1f1f;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--purple);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #1f1f1f;
+}
+
+header .navbar a:hover{
+    color: var(--purple);
+}
+
+header .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--purple);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #1f1f1f;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 6rem auto 2rem; /* Margen superior aumentado para centrar los formularios */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container h2 {
+    margin-bottom: 20px; /* Espacio adicional debajo del encabezado */
+}
+
+.form-group {
+    margin-bottom: 20px; 
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: left; /* Ajusta el texto a la izquierda */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Ajusta el texto a la izquierda */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 20px); /* Ancho ajustado para compensar el padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botón */
+.button {
+    border-radius: 5rem;
+    background: var(--purple);
+    color: var(--secondary-color);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #5b499e;
+}
+
+
+footer {
+    position: fixed; /* Fijar el pie de página */
+    bottom: 0; /* Colocar el pie de página en la parte inferior */
+    width: 100%; /* Ajustar el ancho al 100% del viewport */
+    color: #fff;
+    padding: 1px 100;
+}
+
+
+
+
+/* Estilos para el pie de página */
+.footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px; /* Reducido el espacio superior */
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: black;
+    font-size: 25px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px; /* Reducido el espacio superior */
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para enlaces de redes sociales */
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #72008e; /* Cambiar color al pasar el ratón */
+}
+
+/* Estilos para el ícono de ubicación */
+.location-icon {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/* Estilos para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+    .footer-column {
+        flex: 100%;
+        margin: 20px 0;
+    }
+}
+/* Estilos para el pie de página */
+.footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: black;
+    font-size: 25px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para enlaces de redes sociales */
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8700a9;
+}
+
+/* Estilos para el ícono de ubicación */
+.location-icon {
+    margin-right: 5px;
+}
+
+/* Estilos para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+    .footer-column {
+        flex: 100%;
+        margin: 20px 0;
+    }
+}

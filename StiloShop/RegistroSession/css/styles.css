@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;   
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../imagenes/fb65f587e9d45b448c4e225aad0db046.jpg);
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 550px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(184, 183, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.requirements {
+    font-size: small;
+    display: none;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.requirements ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.requirements li {
+    margin-bottom: 5px;
+}
+
+.bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.bullet.green {
+    background-color: green;
+}
+
+.bullet.red {
+    background-color: red;
+}
+
+.form.password-requirements-shown {
+    height: auto;
+}
+
+.container-form.register.expanded {
+    height: auto;
+}
+
+
+
+
+.lave {
+    font-family: 'montserrat', sans-serif;   
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #9191bd;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: #555;
+}
+
+.ayuda {
+    background-color: #f8f8f8;
+    color: black;
+    border: none;
+    text-align: center;
+    align-items: center;
+    font-size: 11px;
+    display: flex;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.icons {
+    margin: 15px 0;
+}
+
+.icons i {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    border: solid thin #9191bd;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.icons i:hover {
+    background-color: #c7c7f3;
+    color: #fff;
+}
+
+.form {
+    margin: 20px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 4px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form label i {
+    color: #a7a7a7;
+}
+
+.form input[type="submit"] {
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+    background-color: #7a7a9a;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information,
+    .form-information-childs .ayuda {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .form-information,
+    .form-information-childs .ayuda {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
